@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: black;
+}
+
+a#logo {
+  display: flex;
+  padding: 0.1vw;
+  font-size: 1.5vw;
+  background: ;
+}
+
+/* CHARACTER */
+
+#character {
+  width: 100vw;
+  height: 100vw;
+  display: block;
+  background: url("assets/mask.svg"), url("assets/colors.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+}
+
+#face {
+  width: 40vw;
+  height: 22.7vw;
+  background: url("assets/face.svg");
+  background-size: contain;
+  mix-blend-mode: hard-light;
+}

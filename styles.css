@@ -1,19 +1,62 @@
+/* Fonts */
+
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+/* Reset */
 * {
   margin: 0;
+  color: black;
+  text-decoration: none;
 }
+
+/* Variables */
+:root {
+  --border-size: 0.175vw;
+  --border-radius: 10vw;
+  --border-thickness: inset -0.1vw 0 0 black, inset 0.1vw 0 0 black;
+}
+
+/* Styles */
 
 body {
   background: black;
+  font-weight: 450;
 }
 
 a#logo {
   display: inline-flex;
-  padding: 1vw;
+  padding: 0.5vw;
   font-size: 1.5vw;
   background: url("assets/logo.jpg") no-repeat;
   background-size: cover;
   width: auto;
-  border-radius: 2vw;
+  border-radius: var(--border-radius);
+}
+
+a#logo span {
+  border: var(--border-size) solid black;
+  padding: 0.5vw 1vw;
+  border-radius: var(--border-radius);
+  box-shadow: var(--border-thickness);
 }
 
 /* CHARACTER */

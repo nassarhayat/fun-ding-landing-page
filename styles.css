@@ -7,10 +7,13 @@ body {
 }
 
 a#logo {
-  display: flex;
-  padding: 0.1vw;
+  display: inline-flex;
+  padding: 1vw;
   font-size: 1.5vw;
-  background: ;
+  background: url("assets/logo.jpg") no-repeat;
+  background-size: cover;
+  width: auto;
+  border-radius: 2vw;
 }
 
 /* CHARACTER */

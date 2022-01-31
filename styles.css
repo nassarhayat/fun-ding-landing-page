@@ -132,6 +132,16 @@ a.button span {
       rgba(29, 211, 254, 0.52) 100%
     ),
     linear-gradient(40.09deg, #f0a789 25%, #f83434 60%);
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Character */
@@ -140,12 +150,11 @@ a.button span {
   width: var(--column);
   height: var(--column);
   display: block;
-  background: url("assets/mask.svg"), url("assets/colors.jpg");
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   right: 0;
+  animation: colorful 10s linear infinite;
 }
 
 #face {
@@ -155,6 +164,31 @@ a.button span {
   background-size: 50%;
   mix-blend-mode: hard-light;
 }
+
+@keyframes colorful {
+  0% {
+    background: url("assets/mask.svg"), url("assets/color1.jpg");
+    background-size: cover;
+  }
+  25% {
+    background: url("assets/mask.svg"), url("assets/color2.jpg");
+    background-size: cover;
+  }
+  50% {
+    background: url("assets/mask.svg"), url("assets/color3.jpg");
+    background-size: cover;
+  }
+  75% {
+    background: url("assets/mask.svg"), url("assets/color4.jpg");
+    background-size: cover;
+  }
+  100% {
+    background: url("assets/mask.svg"), url("assets/color1.jpg");
+    background-size: cover;
+  }
+}
+
+/* Media Queries */
 
 @media screen and (min-width: 75rem) {
   #character {

@@ -67,11 +67,6 @@ a.button span {
   display: flex;
 }
 
-a.button.discord {
-  background-image: none;
-  background: #7289da;
-}
-
 a.button.twitter {
   background: none;
   background: #1da1f2;

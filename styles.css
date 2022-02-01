@@ -159,43 +159,30 @@ a.button span {
     url("assets/color3.jpg"), url("assets/color4.jpg");
 }
 
-#face {
-  width: 80vh;
-  height: 80vh;
-  background: url("assets/face.svg") no-repeat center;
-  background-size: 50%;
-  mix-blend-mode: hard-light;
-}
-
 @keyframes colorful {
   0% {
-    background: url("assets/mask.svg"), url("assets/color1.jpg"),
-      url("assets/color2.jpg"), url("assets/color3.jpg"),
-      url("assets/color4.jpg");
+    background: url("assets/color1.jpg"), url("assets/color2.jpg"),
+      url("assets/color3.jpg"), url("assets/color4.jpg");
     background-size: cover;
   }
   25% {
-    background: url("assets/mask.svg"), url("assets/color2.jpg"),
-      url("assets/color1.jpg"), url("assets/color3.jpg"),
-      url("assets/color4.jpg");
+    background: url("assets/color2.jpg"), url("assets/color1.jpg"),
+      url("assets/color3.jpg"), url("assets/color4.jpg");
     background-size: cover;
   }
   50% {
-    background: url("assets/mask.svg"), url("assets/color3.jpg"),
-      url("assets/color2.jpg"), url("assets/color1.jpg"),
-      url("assets/color4.jpg");
+    background: url("assets/color3.jpg"), url("assets/color2.jpg"),
+      url("assets/color1.jpg"), url("assets/color4.jpg");
     background-size: cover;
   }
   75% {
-    background: url("assets/mask.svg"), url("assets/color4.jpg"),
-      url("assets/color2.jpg"), url("assets/color1.jpg"),
-      url("assets/color3.jpg");
+    background: url("assets/color4.jpg"), url("assets/color2.jpg"),
+      url("assets/color1.jpg"), url("assets/color3.jpg");
     background-size: cover;
   }
   100% {
-    background: url("assets/mask.svg"), url("assets/color1.jpg"),
-      url("assets/color2.jpg"), url("assets/color3.jpg"),
-      url("assets/color4.jpg");
+    background: url("assets/color1.jpg"), url("assets/color2.jpg"),
+      url("assets/color3.jpg"), url("assets/color4.jpg");
     background-size: cover;
   }
 }

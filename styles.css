@@ -101,9 +101,6 @@ a.button {
   border-radius: var(--border-radius);
 }
 
-a.button span {
-}
-
 /* Circle */
 
 #circle {
@@ -132,6 +129,9 @@ a.button span {
       rgba(29, 211, 254, 0.52) 100%
     ),
     linear-gradient(40.09deg, #f0a789 25%, #f83434 60%);
+}
+
+#circle span {
   animation: spin 10s linear infinite;
 }
 

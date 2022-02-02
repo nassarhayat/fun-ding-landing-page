@@ -38,13 +38,15 @@ html {
 /* Styles */
 
 body {
-  background: black;
+  background-color: black;
   font-weight: 450;
   color: black;
 }
 
 #container {
-  width: 400px;
+  display: grid;
+  grid-template-columns: 400px auto;
+  height: 100vh;
 }
 
 a.button {
@@ -99,6 +101,7 @@ p {
 
 a.button {
   border-radius: var(--border-radius);
+  white-space: nowrap;
 }
 
 /* Circle */
@@ -147,54 +150,37 @@ a.button {
 /* Character */
 
 #character {
-  width: var(--column);
-  height: var(--column);
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 0;
+  background-position: top left;
+  background-size: contain;
   animation: colorful 10s linear infinite;
-  background: url("assets/color1.jpg"), url("assets/color2.jpg"),
+  background-image: url("assets/color1.jpg"), url("assets/color2.jpg"),
     url("assets/color3.jpg"), url("assets/color4.jpg");
 }
 
 @keyframes colorful {
   0% {
-    background: url("assets/color1.jpg"), url("assets/color2.jpg"),
+    background-image: url("assets/color1.jpg"), url("assets/color2.jpg"),
       url("assets/color3.jpg"), url("assets/color4.jpg");
     background-size: cover;
   }
   25% {
-    background: url("assets/color2.jpg"), url("assets/color1.jpg"),
+    background-image: url("assets/color2.jpg"), url("assets/color1.jpg"),
       url("assets/color3.jpg"), url("assets/color4.jpg");
     background-size: cover;
   }
   50% {
-    background: url("assets/color3.jpg"), url("assets/color2.jpg"),
+    background-image: url("assets/color3.jpg"), url("assets/color2.jpg"),
       url("assets/color1.jpg"), url("assets/color4.jpg");
     background-size: cover;
   }
   75% {
-    background: url("assets/color4.jpg"), url("assets/color2.jpg"),
+    background-image: url("assets/color4.jpg"), url("assets/color2.jpg"),
       url("assets/color1.jpg"), url("assets/color3.jpg");
     background-size: cover;
   }
   100% {
-    background: url("assets/color1.jpg"), url("assets/color2.jpg"),
+    background-image: url("assets/color1.jpg"), url("assets/color2.jpg"),
       url("assets/color3.jpg"), url("assets/color4.jpg");
     background-size: cover;
-  }
-}
-
-/* Media Queries */
-
-@media screen and (min-width: 75rem) {
-  #character {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100vh;
-    height: 100vh;
   }
 }

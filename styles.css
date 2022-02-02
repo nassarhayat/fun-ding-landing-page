@@ -119,8 +119,9 @@ a.button {
 #circle {
   width: var(--column);
   height: var(--column);
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: -0.4rem;
   font-weight: 250;
   display: flex;
   justify-content: center;
@@ -175,16 +176,16 @@ a.button {
       url("assets/color3.jpg"), url("assets/color4.jpg");
   }
   25% {
-    background-image: url("assets/color2.jpg"), url("assets/color1.jpg"),
-      url("assets/color3.jpg"), url("assets/color4.jpg");
+    background-image: url("assets/color2.jpg"), url("assets/color3.jpg"),
+      url("assets/color4.jpg"), url("assets/color1.jpg");
   }
   50% {
-    background-image: url("assets/color3.jpg"), url("assets/color2.jpg"),
-      url("assets/color1.jpg"), url("assets/color4.jpg");
+    background-image: url("assets/color3.jpg"), url("assets/color4.jpg"),
+      url("assets/color1.jpg"), url("assets/color2.jpg");
   }
   75% {
-    background-image: url("assets/color4.jpg"), url("assets/color2.jpg"),
-      url("assets/color1.jpg"), url("assets/color3.jpg");
+    background-image: url("assets/color4.jpg"), url("assets/color1.jpg"),
+      url("assets/color2.jpg"), url("assets/color3.jpg");
   }
   100% {
     background-image: url("assets/color1.jpg"), url("assets/color2.jpg"),

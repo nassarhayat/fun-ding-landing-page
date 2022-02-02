@@ -45,7 +45,7 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 320px auto;
   height: 100vh;
 }
 
@@ -150,8 +150,9 @@ a.button {
 /* Character */
 
 #character {
-  background-position: top left;
+  background-position: top right;
   background-size: contain;
+  background-repeat: no-repeat;
   animation: colorful 10s linear infinite;
   background-image: url("assets/color1.jpg"), url("assets/color2.jpg"),
     url("assets/color3.jpg"), url("assets/color4.jpg");
@@ -161,26 +162,32 @@ a.button {
   0% {
     background-image: url("assets/color1.jpg"), url("assets/color2.jpg"),
       url("assets/color3.jpg"), url("assets/color4.jpg");
-    background-size: cover;
   }
   25% {
     background-image: url("assets/color2.jpg"), url("assets/color1.jpg"),
       url("assets/color3.jpg"), url("assets/color4.jpg");
-    background-size: cover;
   }
   50% {
     background-image: url("assets/color3.jpg"), url("assets/color2.jpg"),
       url("assets/color1.jpg"), url("assets/color4.jpg");
-    background-size: cover;
   }
   75% {
     background-image: url("assets/color4.jpg"), url("assets/color2.jpg"),
       url("assets/color1.jpg"), url("assets/color3.jpg");
-    background-size: cover;
   }
   100% {
     background-image: url("assets/color1.jpg"), url("assets/color2.jpg"),
       url("assets/color3.jpg"), url("assets/color4.jpg");
-    background-size: cover;
+  }
+}
+
+/* media queries */
+
+@media (max-width: 840px) {
+  #container {
+    grid-template-columns: 320px;
+  }
+  #character {
+    height: 320px;
   }
 }

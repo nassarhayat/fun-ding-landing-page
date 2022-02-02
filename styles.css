@@ -37,6 +37,15 @@ html {
 
 /* Styles */
 
+::selection {
+  background: orange;
+  color: black;
+}
+
+* {
+  cursor: default;
+}
+
 body {
   background-color: black;
   font-weight: 450;
@@ -60,9 +69,11 @@ a.button {
   color: black;
   margin: var(--border-size) 0 0 var(--border-size);
   margin-left: var(--border-size);
+  cursor: pointer;
 }
 
 a.button span {
+  cursor: pointer;
   border: var(--border-size) solid black;
   padding: 0.5rem 1.2rem 0.5rem 1rem;
   border-radius: var(--border-radius);
@@ -81,21 +92,20 @@ a.button img {
 h1,
 p {
   color: white;
-  width: calc(var(--column) - 3rem);
   border: var(--border-size) solid white;
   padding: 2rem;
   border-radius: var(--border-radius);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 250;
   margin-top: var(--border-size);
 }
 
 p {
   margin-top: var(--border-size-reverse);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 390;
 }
 
@@ -150,6 +160,7 @@ a.button {
 /* Character */
 
 #character {
+  height: 100vh;
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;

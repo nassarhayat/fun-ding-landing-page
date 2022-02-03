@@ -54,7 +54,7 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: 320px auto;
+  grid-template-columns: var(--column) auto;
   height: 100vh;
 }
 
@@ -195,11 +195,11 @@ a.button {
 
 /* media queries */
 
-@media (max-width: 840px) {
+@media (max-width: 25rem) {
   #container {
-    grid-template-columns: 320px;
+    grid-template-columns: var(--column);
   }
   #character {
-    height: 320px;
+    height: var(--column);
   }
 }
